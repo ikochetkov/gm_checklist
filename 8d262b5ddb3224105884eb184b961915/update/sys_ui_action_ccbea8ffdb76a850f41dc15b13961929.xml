@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>sign_review</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.checklist_attached &amp;&amp; current.status == 2 &amp;&amp; gs.getUserID() == current.gm_name</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Sign</name>
+        <onclick>commentsDialog()</onclick>
+        <order>100</order>
+        <script><![CDATA[function commentsDialog(){
+	
+	
+	var recordID = g_form.getUniqueValue(); //sys_id of the record being signed
+	var tableName = g_form.getTableName(); //table of the record being signed
+	var type = "primary"; //type of signature. "primary" "secondary" etc
+
+	var dialog = new GlideDialogWindow("x_aaro2_signature_signature_popup"); //is the name of the UI Page you created (not a ui macro)
+	dialog.setTitle("Manager Signature");
+	dialog.setPreference("table_name", tableName); 
+	dialog.setPreference("parent", recordID);
+	dialog.setPreference("type", type);
+	dialog.render();
+
+}
+]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>xxeuzochuk</sys_created_by>
+        <sys_created_on>2021-03-16 15:29:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>ccbea8ffdb76a850f41dc15b13961929</sys_id>
+        <sys_mod_count>49</sys_mod_count>
+        <sys_name>Sign</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GM Checklist" source="x_aaro2_gm_checkl">8d262b5ddb3224105884eb184b961915</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="GM Checklist">8d262b5ddb3224105884eb184b961915</sys_scope>
+        <sys_update_name>sys_ui_action_ccbea8ffdb76a850f41dc15b13961929</sys_update_name>
+        <sys_updated_by>xxikochet</sys_updated_by>
+        <sys_updated_on>2021-03-18 16:56:35</sys_updated_on>
+        <table>x_aaro2_gm_checkl_rm_review</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

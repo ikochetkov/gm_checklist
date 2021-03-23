@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="warehouse_management_quality_assurance_center_task" label="Warehouse Management/Quality Assurance Center task have been reviewed" language="en" table="x_aaro2_gm_checkl_checklist">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>warehouse_management_quality_assurance_center_task</element>
+            <help/>
+            <hint/>
+            <label>Warehouse Management/Quality Assurance Center task have been reviewed</label>
+            <language>en</language>
+            <name>x_aaro2_gm_checkl_checklist</name>
+            <plural>Warehouse Management/Quality Assurance Center task have been reviewed</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>xxmpurik</sys_created_by>
+            <sys_created_on>2021-03-09 14:55:28</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>0b27aca1dbfa24105884eb184b9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Warehouse Management/Quality Assurance Center task have been reviewed</sys_name>
+            <sys_package display_value="GM Checklist" source="x_aaro2_gm_checkl">8d262b5ddb3224105884eb184b961915</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="GM Checklist">8d262b5ddb3224105884eb184b961915</sys_scope>
+            <sys_update_name>sys_documentation_x_aaro2_gm_checkl_checklist_warehouse_management_quality_assurance_center_task_en</sys_update_name>
+            <sys_updated_by>xxmpurik</sys_updated_by>
+            <sys_updated_on>2021-03-09 14:55:28</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="GM Checklist" name="GM Checklist">2c828ec2db76a810f41dc15b1396192b</category>
+        <collection>x_aaro2_gm_checkl_rm_review</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description>The notification should tell the RM that they need to walk through the store with the GM and fill out the checklist within 14 days. After it has been completed, the RM should upload it and the notification should tell them where to go to upload the completed checklist. </description>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<br><hr><br>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <event_name>agreement.recovery.complete</event_name>
+        <event_parm_1>true</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 12pt;">Changing a GM is never easy, but, now is a great time to get the store back on track and set up the new GM for success. Please print the attached GM Changeover Checklist attached to this email. RM, you will have ${mail_script:get_attach_duration_from_property} to complete the changeover and get your GM's final approval. If you feel like you will need assistance, this is a great opportunity to develop some Team Members in a neighboring store and have them assist you with merchandising the showroom and organizing the warehouse. <br /><br />Upon completion, please attach this form to continue the process ${URI_REF}</span></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>New GM identified - notify RM with document inside</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>rm_name</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>New GM Identified - GM Changeover Checklist Due</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>xxikochet</sys_created_by>
+        <sys_created_on>2021-03-10 09:33:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>28466479dbf2e410f41dc15b1396193d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>New GM identified - notify RM with document inside</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GM Checklist" source="x_aaro2_gm_checkl">8d262b5ddb3224105884eb184b961915</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="GM Checklist">8d262b5ddb3224105884eb184b961915</sys_scope>
+        <sys_update_name>sysevent_email_action_28466479dbf2e410f41dc15b1396193d</sys_update_name>
+        <sys_updated_by>xxikochet</sys_updated_by>
+        <sys_updated_on>2021-03-23 08:47:11</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

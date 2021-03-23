@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_aaro2_gm_checkl_rm_review">x_aaro2_gm_checkl_rm_review</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>RMREV</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>xxikochet</sys_created_by>
+        <sys_created_on>2021-03-11 10:54:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6d03ce06db76a810f41dc15b13961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RMREV</sys_name>
+        <sys_package display_value="GM Checklist" source="x_aaro2_gm_checkl">8d262b5ddb3224105884eb184b961915</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="GM Checklist">8d262b5ddb3224105884eb184b961915</sys_scope>
+        <sys_update_name>sys_number_6d03ce06db76a810f41dc15b13961933</sys_update_name>
+        <sys_updated_by>xxikochet</sys_updated_by>
+        <sys_updated_on>2021-03-11 10:54:03</sys_updated_on>
+    </sys_number>
+</record_update>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="RM Review" max_length="40" name="x_aaro2_gm_checkl_rm_review" sizeclass="7" type="collection">
+        <element label="AD" max_length="32" name="ad_name" reference="sys_user" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="ESS Checklist" max_length="32" name="checklist" reference="x_aaro2_gm_checkl_checklist" type="reference"/>
+        <element label="Checklist Attached" max_length="40" name="checklist_attached" type="boolean"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Comments" max_length="256" name="comments" type="journal_input"/>
+        <element label="Department" max_length="32" name="department" reference="u_aarons_department" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="GM" mandatory="true" max_length="32" name="gm_name" reference="sys_user" type="reference"/>
+        <element label="GM Signed" max_length="40" name="gm_signed" type="boolean"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="RM" mandatory="true" max_length="32" name="rm_name" reference="sys_user" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" default="1" label="Status" max_length="40" name="status" read_only="true" type="choice">
+            <choice>
+                <element hint="Awaiting populated checklist from RM" inactive_on_update="false" label="Awaiting Checklist" sequence="1" value="1"/>
+                <element hint="Awaiting signature from RM" inactive_on_update="false" label="Awaiting GMs signature" sequence="2" value="2"/>
+                <element hint="Request is waiting for checklist which should be created through ESS" inactive_on_update="false" label="Awaiting ESS checklist" sequence="3" value="3"/>
+                <element hint="Checklist completed all operations done" inactive_on_update="false" label="Completed" sequence="4" value="4"/>
+                <element hint="RM didn't attach checklist during 14 days" inactive_on_update="false" label="Сhecklist was not added" sequence="5" value="-1"/>
+                <element hint="GM didn't add signature" inactive_on_update="false" label="Signature was not added" sequence="6" value="-2"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="gm_name"/>
+        </index>
+        <index name="index2">
+            <element name="ad_name"/>
+        </index>
+        <index name="index3">
+            <element name="checklist"/>
+        </index>
+        <index name="index4">
+            <element name="rm_name"/>
+        </index>
+        <index name="index5">
+            <element name="department"/>
+        </index>
+    </element>
+</database>
